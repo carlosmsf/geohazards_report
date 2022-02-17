@@ -1,0 +1,52 @@
+{
+    "collectInfo": {
+        "enabled": true
+    },
+    "displayInfo": {
+        "map": {
+            "defaultType": {
+                "name": "id:3e1a00aeae81496587988075fe529f71||OpenStreetMap"
+            },
+            "home": {
+                "latitude": 38.75,
+                "longitude": -9.15,
+                "zoomLevel": 12.36
+            },
+            "includeDefaultMaps": true,
+            "preview": {
+                "zoomLevel": 0
+            }
+        },
+        "style": {
+            "backgroundColor": "#C2C2C2",
+            "footerBackgroundColor": "#E8E8E8",
+            "footerTextColor": "#26384A",
+            "inputBackgroundColor": "#E8E8E8",
+            "textColor": "#26384A",
+            "toolbarBackgroundColor": "#3F6285",
+            "toolbarTextColor": "#E8E8E8"
+        }
+    },
+    "foldersInfo": {
+        "showMap": true
+    },
+    "imagesInfo": {
+        "captureResolution": 1280
+    },
+    "overviewInfo": {
+        "enabled": false
+    },
+    "queryInfo": {
+        "applySpatialFilter": true,
+        "copyEnabled": false,
+        "editEnabled": true,
+        "mode": "",
+        "viewEnabled": false,
+        "where": ""
+    },
+    "sentInfo": {
+        "copyEnabled": true,
+        "editEnabled": true,
+        "enabled": true
+    }
+}
