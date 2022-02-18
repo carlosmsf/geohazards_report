@@ -1,5 +1,5 @@
 {
-    "access": "public",
+    "access": "private",
     "accessInformation": null,
     "advancedSettings": null,
     "appCategories": [
@@ -9,44 +9,52 @@
     "categories": [
     ],
     "commentsEnabled": true,
-    "created": 1595485298000,
-    "culture": "en-gb",
-    "description": "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" font-family:'Avenir Next LT Pro'; font-size:15pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Avenir Next LT Pro';\">Aplicação para reporte de ocorrências de eventos de catástofres naturais no âmbito do piloto de Lisboa do Projecto AGEO</span></p></body></html>",
+    "created": 1645112257000,
+    "culture": "pt-pt",
+    "description": "\n<p style=' margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'><span style=' font-family:'>Aplicação para reporte de ocorrências de eventos de catástofres naturais no âmbito do piloto de Lisboa do Projecto AGEO</span></p>",
     "documentation": null,
     "extent": [
     ],
     "groupDesignations": null,
     "guid": null,
+    "id": "69ec870156cd49fe948615ceb1b83fce",
     "industries": [
     ],
+    "isOrgItem": true,
+    "itemControl": "admin",
     "languages": [
     ],
     "largeThumbnail": null,
     "licenseInfo": null,
     "listed": false,
-    "modified": 1637127919000,
+    "modified": 1645185388000,
+    "name": "AGEO_-_GeoHazards_report.zip",
     "numComments": 0,
     "numRatings": 0,
-    "numViews": 19972,
-    "orgId": "jMCHJcLe13FaKCFB",
+    "numViews": 1,
+    "orgId": "1dSrzEWVQn5kHHyK",
+    "owner": "resist_CML",
+    "ownerFolder": "4a6c7820d16a407f8e81d7155091622b",
     "properties": null,
+    "protected": false,
     "proxyFilter": null,
-    "scoreCompleteness": 60,
+    "scoreCompleteness": 45,
     "screenshots": [
     ],
-    "size": 53822,
-    "snippet": null,
+    "size": 331222,
+    "snippet": "",
     "spatialReference": null,
     "subInfo": 0,
+    "tags": [
+    ],
     "thumbnail": "thumbnail/logoAGEO.png",
     "title": "AGEO - GeoHazards report",
-    "type": "Microsoft Excel",
+    "type": "Form",
     "typeKeywords": [
-        "Data",
-        "Document",
-        "Microsoft Excel",
-        "showUnmatchedAddresses",
-        "Table"
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
     ],
     "url": null
 }

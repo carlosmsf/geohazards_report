@@ -5,6 +5,16 @@
     <model>
       <itext>
         <translation lang="default" default="true()">
+          <text id="/AGEO___GeoHazards_report/intro/generated_note_name_7:label">
+            <value><output value=" /AGEO___GeoHazards_report/generated_note_no_label "/></value>
+            <value form="image">jr://images/logoAGEO.png</value>
+          </text>
+          <text id="/AGEO___GeoHazards_report/intro/generated_note_name_9:label">
+            <value>&lt;center&gt;
+&lt;font size="0.2" color="dimgrey"&gt;Aplicação disponibilizada por:&lt;/font&gt;
+&lt;/center&gt;</value>
+            <value form="image">jr://images/logo_CML.png</value>
+          </text>
           <text id="/AGEO___GeoHazards_report/geohazard_type/event_type:label">
             <value><output value=" /AGEO___GeoHazards_report/generated_note_no_label "/></value>
             <value form="image">jr://images/geohazard_type.svg</value>
@@ -56,11 +66,16 @@
           <generated_note_form_title/>
           <generated_note_calc_title/>
           <generated_note_no_label/>
+          <intro>
+            <generated_note_name_7/>
+            <generated_note_name_8/>
+            <generated_note_name_9/>
+          </intro>
           <geohazard_type>
             <event_type/>
           </geohazard_type>
           <location_page>
-            <generated_note_name_12/>
+            <generated_note_name_18/>
             <event_point/>
             <event_date>now()</event_date>
             <present/>
@@ -104,7 +119,7 @@
             <observ/>
           </photos_page>
           <earthquakes>
-            <generated_note_name_59/>
+            <generated_note_name_65/>
           </earthquakes>
           <meta>
             <instanceID/>
@@ -112,12 +127,15 @@
         </AGEO___GeoHazards_report>
       </instance>
       <bind nodeset="/AGEO___GeoHazards_report/generated_note_form_title" readonly="true()" type="string"/>
-      <bind nodeset="/AGEO___GeoHazards_report/generated_note_calc_title" readonly="true()" type="string" calculate="if( /AGEO___GeoHazards_report/geohazard_type/event_type  != '', '&lt;b&gt;'+jr:choice-name( /AGEO___GeoHazards_report/geohazard_type/event_type , ' /AGEO___GeoHazards_report/geohazard_type/event_type ')+'&lt;/b&gt;', 'Tipo de ocorrência')"/>
+      <bind nodeset="/AGEO___GeoHazards_report/generated_note_calc_title" readonly="true()" type="string" calculate="if( /AGEO___GeoHazards_report/geohazard_type/event_type  != '', '&lt;b&gt;'+jr:choice-name( /AGEO___GeoHazards_report/geohazard_type/event_type , ' /AGEO___GeoHazards_report/geohazard_type/event_type ')+'&lt;/b&gt;', '')"/>
       <bind nodeset="/AGEO___GeoHazards_report/generated_note_no_label" readonly="true()" type="string"/>
+      <bind nodeset="/AGEO___GeoHazards_report/intro/generated_note_name_7" readonly="true()" type="string"/>
+      <bind nodeset="/AGEO___GeoHazards_report/intro/generated_note_name_8" readonly="true()" type="string"/>
+      <bind nodeset="/AGEO___GeoHazards_report/intro/generated_note_name_9" readonly="true()" type="string"/>
       <bind nodeset="/AGEO___GeoHazards_report/geohazard_type/event_type" type="select1" required="true()"/>
       <bind nodeset="/AGEO___GeoHazards_report/location_page" relevant=" /AGEO___GeoHazards_report/geohazard_type/event_type  != ''"/>
-      <bind nodeset="/AGEO___GeoHazards_report/location_page/generated_note_name_12" readonly="true()" type="string" relevant=" /AGEO___GeoHazards_report/geohazard_type/event_type  = 'rockfall'"/>
-      <bind nodeset="/AGEO___GeoHazards_report/location_page/event_point" type="geopoint" esri:warning="pulldata(&quot;@geopoint&quot;, ., &quot;horizontalAccuracy&quot;) &lt; 5" esri:warning_message="Localização GPS pouco precisa!"/>
+      <bind nodeset="/AGEO___GeoHazards_report/location_page/generated_note_name_18" readonly="true()" type="string" relevant=" /AGEO___GeoHazards_report/geohazard_type/event_type  = 'rockfall'"/>
+      <bind nodeset="/AGEO___GeoHazards_report/location_page/event_point" type="geopoint" esri:warning_message="Localização GPS pouco precisa!" esri:warning="pulldata(&quot;@geopoint&quot;, ., &quot;horizontalAccuracy&quot;) &lt; 5"/>
       <bind nodeset="/AGEO___GeoHazards_report/location_page/event_date" type="date"/>
       <bind nodeset="/AGEO___GeoHazards_report/location_page/present" type="select" esri:fieldType="esriFieldTypeSingle"/>
       <bind nodeset="/AGEO___GeoHazards_report/location_page/elements_at_risk" type="select"/>
@@ -151,7 +169,7 @@
       <bind nodeset="/AGEO___GeoHazards_report/photos_page/photos/foto" type="binary"/>
       <bind nodeset="/AGEO___GeoHazards_report/photos_page/observ" type="string"/>
       <bind nodeset="/AGEO___GeoHazards_report/earthquakes" relevant=" /AGEO___GeoHazards_report/geohazard_type/event_type  = 'earthquake'"/>
-      <bind nodeset="/AGEO___GeoHazards_report/earthquakes/generated_note_name_59" readonly="true()" type="string"/>
+      <bind nodeset="/AGEO___GeoHazards_report/earthquakes/generated_note_name_65" readonly="true()" type="string"/>
       <bind nodeset="/AGEO___GeoHazards_report/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -165,6 +183,21 @@
     <input appearance="hidden" ref="/AGEO___GeoHazards_report/generated_note_no_label">
       <label>no label</label>
     </input>
+    <group appearance="field-list" ref="/AGEO___GeoHazards_report/intro">
+      <label><output value=" /AGEO___GeoHazards_report/generated_note_no_label "/></label>
+      <input ref="/AGEO___GeoHazards_report/intro/generated_note_name_7">
+        <label ref="jr:itext('/AGEO___GeoHazards_report/intro/generated_note_name_7:label')"/>
+      </input>
+      <input ref="/AGEO___GeoHazards_report/intro/generated_note_name_8">
+        <label>&lt;center&gt;
+Aplicação para reporte de eventos relacionados com fenómenos naturais.
+&lt;/center&gt;</label>
+      </input>
+      <input ref="/AGEO___GeoHazards_report/intro/generated_note_name_9">
+        <label ref="jr:itext('/AGEO___GeoHazards_report/intro/generated_note_name_9:label')"/>
+        <hint>&lt;center&gt;&lt;a href="https://www.lisboa.pt/politica-de-privacidade"&gt;&lt;font size="0.1" color="grey"&gt;Política de privacidade&lt;/font&gt;&lt;/a&gt;&lt;/center&gt;</hint>
+      </input>
+    </group>
     <group appearance="field-list" ref="/AGEO___GeoHazards_report/geohazard_type">
       <label>Selecione o tipo de ocorrência</label>
       <select1 appearance="image-map" ref="/AGEO___GeoHazards_report/geohazard_type/event_type">
@@ -197,7 +230,7 @@
     </group>
     <group appearance="field-list" ref="/AGEO___GeoHazards_report/location_page">
       <label>Informação sobre o evento</label>
-      <input ref="/AGEO___GeoHazards_report/location_page/generated_note_name_12">
+      <input ref="/AGEO___GeoHazards_report/location_page/generated_note_name_18">
         <label>&lt;div width=100% style="background-color: red; text-align: center; vertical-align: top; font-weight: bold; color: white" vertical-align: middle&gt;&lt;img src="sismo.png" /&gt;Sismo&lt;/div&gt;</label>
       </input>
       <input ref="/AGEO___GeoHazards_report/location_page/event_point">
@@ -561,7 +594,7 @@
     </group>
     <group appearance="field-list" ref="/AGEO___GeoHazards_report/earthquakes">
       <label><output value=" /AGEO___GeoHazards_report/generated_note_no_label "/></label>
-      <input esri:style="border=2" ref="/AGEO___GeoHazards_report/earthquakes/generated_note_name_59">
+      <input esri:style="border=2" ref="/AGEO___GeoHazards_report/earthquakes/generated_note_name_65">
         <label>&lt;p&gt;⚠ Para danos no espaço exterior como:&lt;/p&gt;&lt;br/&gt;&lt;img src="exterior_damages.png" /&gt; &lt;p&gt;&lt;b&gt;Reportar nova ocorrência&lt;/b&gt; através do ecrã principal da aplicação!&lt;/p&gt;</label>
       </input>
     </group>

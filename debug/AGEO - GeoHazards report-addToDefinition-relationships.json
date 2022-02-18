@@ -1,0 +1,166 @@
+{
+    "layers": [
+        {
+            "id": 0,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "globalid",
+                    "name": "AGEO___GeoHazards_report_settlements",
+                    "relatedTableId": 1,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                },
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 2,
+                    "keyField": "globalid",
+                    "name": "AGEO___GeoHazards_report_landslides",
+                    "relatedTableId": 2,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                },
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 3,
+                    "keyField": "globalid",
+                    "name": "AGEO___GeoHazards_report_floods",
+                    "relatedTableId": 3,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                },
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 4,
+                    "keyField": "globalid",
+                    "name": "AGEO___GeoHazards_report_sinkholes",
+                    "relatedTableId": 4,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                },
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 5,
+                    "keyField": "globalid",
+                    "name": "AGEO___GeoHazards_report_damaged_buildings",
+                    "relatedTableId": 5,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                },
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 6,
+                    "keyField": "globalid",
+                    "name": "AGEO___GeoHazards_report_photos",
+                    "relatedTableId": 6,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "parentglobalid",
+                    "name": "AGEO___GeoHazards_report_settlements",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 2,
+                    "keyField": "parentglobalid",
+                    "name": "AGEO___GeoHazards_report_landslides",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 3,
+                    "keyField": "parentglobalid",
+                    "name": "AGEO___GeoHazards_report_floods",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 4,
+                    "keyField": "parentglobalid",
+                    "name": "AGEO___GeoHazards_report_sinkholes",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 5,
+                    "keyField": "parentglobalid",
+                    "name": "AGEO___GeoHazards_report_damaged_buildings",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 6,
+                    "keyField": "parentglobalid",
+                    "name": "AGEO___GeoHazards_report_photos",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        }
+    ]
+}

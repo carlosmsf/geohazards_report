@@ -1,0 +1,1066 @@
+{
+    "layers": [
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Query,Editing,Create,Update,Delete",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "labelingInfo": null,
+                "renderer": {
+                    "description": "Survey Data Locations",
+                    "label": "AGEO - GeoHazards report",
+                    "symbol": {
+                        "angle": 0,
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "width": 1
+                        },
+                        "size": 8,
+                        "style": "esriSMSCircle",
+                        "type": "esriSMS",
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "event_type",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "earthquake",
+                                "name": "Sismo"
+                            },
+                            {
+                                "code": "settlement",
+                                "name": "Assentamento"
+                            },
+                            {
+                                "code": "sinkhole",
+                                "name": "Abatimento"
+                            },
+                            {
+                                "code": "rockfall",
+                                "name": "Queda de blocos"
+                            },
+                            {
+                                "code": "flood",
+                                "name": "Inundação"
+                            },
+                            {
+                                "code": "landslide",
+                                "name": "Deslizamento"
+                            }
+                        ],
+                        "name": "cvd_event_type",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "event_type",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Data do evento",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "event_date",
+                    "nullable": true,
+                    "type": "esriFieldTypeDate",
+                    "visible": true
+                },
+                {
+                    "alias": "present",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "present",
+                    "nullable": true,
+                    "type": "esriFieldTypeSingle",
+                    "visible": true
+                },
+                {
+                    "alias": "Elementos em risco",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "elements_at_risk",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "settlements_count",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "settlements_count",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "landslides_count",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "landslides_count",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "floods_count",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "floods_count",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "sinkholes_count",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sinkholes_count",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Observações",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "observ",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                }
+            ],
+            "geometryType": "esriGeometryPoint",
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 0,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "geohazards",
+            "objectIdField": "objectid",
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        }
+    ],
+    "tables": [
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Tipo de assentamento",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "1",
+                                "name": "1"
+                            },
+                            {
+                                "code": "2",
+                                "name": "2"
+                            },
+                            {
+                                "code": "3",
+                                "name": "3"
+                            },
+                            {
+                                "code": "4",
+                                "name": "4"
+                            }
+                        ],
+                        "name": "cvd_building_settlement",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "building_settlement",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Outras estruturas",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "wall",
+                                "name": "Muro"
+                            },
+                            {
+                                "code": "stairs",
+                                "name": "Escadaria"
+                            }
+                        ],
+                        "name": "cvd_other_structures",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "other_structures",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Direcção da fissuração",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "crack_direction",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Dimensão das fissuras",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "1",
+                                "name": "< 0,3 mm"
+                            },
+                            {
+                                "code": "2",
+                                "name": "< 1,5 mm"
+                            },
+                            {
+                                "code": "3",
+                                "name": "< 5 mm"
+                            },
+                            {
+                                "code": "4",
+                                "name": "< 15 mm"
+                            },
+                            {
+                                "code": "5",
+                                "name": "> 15 mm"
+                            }
+                        ],
+                        "name": "cvd_crack_dim",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "crack_dim",
+                    "nullable": true,
+                    "type": "esriFieldTypeSingle",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 1,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "settlements",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        },
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Danos observados",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "damages",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Outros danos",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "damages_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Volume de terras deslocadas",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "1",
+                                "name": "Carro"
+                            },
+                            {
+                                "code": "2",
+                                "name": "Carrinha"
+                            },
+                            {
+                                "code": "3",
+                                "name": "Autocarro"
+                            },
+                            {
+                                "code": "4",
+                                "name": "Camião TIR"
+                            },
+                            {
+                                "code": "5",
+                                "name": "> Camião TIR"
+                            }
+                        ],
+                        "name": "cvd_volume",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "volume",
+                    "nullable": true,
+                    "type": "esriFieldTypeSingle",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 2,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "landslides",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        },
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Danos observados",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "floods_damages",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Outros danos",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "floods_damages_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Nível de água",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "1",
+                                "name": "1"
+                            },
+                            {
+                                "code": "2",
+                                "name": "2"
+                            },
+                            {
+                                "code": "3",
+                                "name": "3"
+                            },
+                            {
+                                "code": "4",
+                                "name": "4"
+                            },
+                            {
+                                "code": "5",
+                                "name": "5"
+                            },
+                            {
+                                "code": "6",
+                                "name": "6"
+                            }
+                        ],
+                        "name": "cvd_water_level",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "water_level",
+                    "nullable": true,
+                    "type": "esriFieldTypeSingle",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 3,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "floods",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        },
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Dimensão (em passos)",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "1",
+                                "name": "1"
+                            },
+                            {
+                                "code": "2",
+                                "name": "2"
+                            },
+                            {
+                                "code": "3",
+                                "name": "3"
+                            },
+                            {
+                                "code": "4",
+                                "name": "4"
+                            },
+                            {
+                                "code": "5",
+                                "name": "5"
+                            },
+                            {
+                                "code": "6",
+                                "name": "≥ 6"
+                            }
+                        ],
+                        "name": "cvd_sinkhole_dim",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "sinkhole_dim",
+                    "nullable": true,
+                    "type": "esriFieldTypeSingle",
+                    "visible": true
+                },
+                {
+                    "alias": "Local",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "road",
+                                "name": "Rodovia"
+                            },
+                            {
+                                "code": "pedestrian_area",
+                                "name": "Zona pedonal"
+                            },
+                            {
+                                "code": "green_area",
+                                "name": "Zona verde"
+                            },
+                            {
+                                "code": "other",
+                                "name": "Outro"
+                            }
+                        ],
+                        "name": "cvd_sinkhole_location",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "sinkhole_location",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Outro",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sinkhole_location_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Infraestruturas afetadas",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "damaged_infrastructures",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Outros",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "damaged_infrastructures_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 4,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "sinkholes",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        },
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "damage_level",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "non_structural",
+                                "name": "Elementos não estruturais"
+                            },
+                            {
+                                "code": "light",
+                                "name": "Danos ligeiros"
+                            },
+                            {
+                                "code": "moderate",
+                                "name": "Danos moderados"
+                            },
+                            {
+                                "code": "colapse",
+                                "name": "Colapso parcial ou total"
+                            }
+                        ],
+                        "name": "cvd_damage_level",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "damage_level",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "N.º de pisos",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "floors",
+                    "nullable": true,
+                    "type": "esriFieldTypeSingle",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 5,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "damaged_buildings",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        },
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": true,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 6,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "photos",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        }
+    ]
+}

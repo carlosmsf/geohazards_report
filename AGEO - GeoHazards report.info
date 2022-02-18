@@ -14,7 +14,6 @@
             },
             "includeDefaultMaps": true,
             "preview": {
-                "zoomLevel": 0
             }
         },
         "style": {
@@ -35,6 +34,10 @@
     },
     "overviewInfo": {
         "enabled": false
+    },
+    "publishInfo": {
+        "connectVersion": "3.12.232",
+        "webFormTransform": true
     },
     "queryInfo": {
         "applySpatialFilter": true,
