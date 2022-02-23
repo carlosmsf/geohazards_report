@@ -2,7 +2,7 @@
     "layers": [
         {
             "allowGeometryUpdates": true,
-            "capabilities": "Query,Editing,Create,Update,Delete",
+            "capabilities": "Create",
             "copyrightText": "",
             "defaultVisibility": true,
             "description": "",
@@ -97,6 +97,10 @@
                             {
                                 "code": "landslide",
                                 "name": "Deslizamento"
+                            },
+                            {
+                                "code": "tsunami",
+                                "name": "Tsunami"
                             }
                         ],
                         "name": "cvd_event_type",
@@ -192,7 +196,7 @@
             ],
             "geometryType": "esriGeometryPoint",
             "globalIdField": "globalid",
-            "hasAttachments": false,
+            "hasAttachments": true,
             "hasM": false,
             "hasStaticData": false,
             "hasZ": false,
@@ -220,6 +224,14 @@
             "supportsRollbackOnFailureParameter": true,
             "supportsStatistics": true,
             "templates": [
+                {
+                    "description": "",
+                    "name": "New Feature",
+                    "prototype": {
+                        "attributes": {
+                        }
+                    }
+                }
             ],
             "type": "Feature Layer",
             "typeIdField": "",
@@ -229,7 +241,7 @@
     ],
     "tables": [
         {
-            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "capabilities": "Create",
             "copyrightText": "",
             "defaultVisibility": true,
             "description": "",
@@ -408,7 +420,7 @@
             "useStandardizedQueries": true
         },
         {
-            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "capabilities": "Create",
             "copyrightText": "",
             "defaultVisibility": true,
             "description": "",
@@ -543,7 +555,7 @@
             "useStandardizedQueries": true
         },
         {
-            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "capabilities": "Create",
             "copyrightText": "",
             "defaultVisibility": true,
             "description": "",
@@ -682,7 +694,7 @@
             "useStandardizedQueries": true
         },
         {
-            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "capabilities": "Create",
             "copyrightText": "",
             "defaultVisibility": true,
             "description": "",
@@ -862,7 +874,7 @@
             "useStandardizedQueries": true
         },
         {
-            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "capabilities": "Create",
             "copyrightText": "",
             "defaultVisibility": true,
             "description": "",
@@ -965,86 +977,6 @@
             "isDataVersioned": false,
             "maxRecordCount": 1000,
             "name": "damaged_buildings",
-            "objectIdField": "objectid",
-            "ownershipBasedAccessControlForFeatures": null,
-            "relationships": [
-            ],
-            "supportedQueryFormats": "JSON, AMF",
-            "supportsAdvancedQueries": true,
-            "supportsRollbackOnFailureParameter": true,
-            "supportsStatistics": true,
-            "syncCanReturnChanges": false,
-            "templates": [
-            ],
-            "type": "Table",
-            "typeIdField": "",
-            "types": [
-            ],
-            "useStandardizedQueries": true
-        },
-        {
-            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
-            "copyrightText": "",
-            "defaultVisibility": true,
-            "description": "",
-            "displayField": "objectid",
-            "editFieldsInfo": null,
-            "fields": [
-                {
-                    "alias": "ObjectID",
-                    "defaultValue": null,
-                    "domain": null,
-                    "editable": false,
-                    "name": "objectid",
-                    "nullable": false,
-                    "type": "esriFieldTypeOID"
-                },
-                {
-                    "alias": "GlobalID",
-                    "defaultValue": null,
-                    "domain": null,
-                    "editable": false,
-                    "length": 38,
-                    "name": "globalid",
-                    "nullable": false,
-                    "sqlType": "sqlTypeGUID",
-                    "type": "esriFieldTypeGlobalID"
-                },
-                {
-                    "alias": "ParentGlobalID",
-                    "defaultValue": null,
-                    "domain": null,
-                    "editable": true,
-                    "length": 38,
-                    "name": "parentglobalid",
-                    "nullable": true,
-                    "sqlType": "sqlTypeGUID",
-                    "type": "esriFieldTypeGUID"
-                }
-            ],
-            "globalIdField": "globalid",
-            "hasAttachments": true,
-            "htmlPopupType": "esriServerHTMLPopupTypeNone",
-            "id": 6,
-            "indexes": [
-                {
-                    "description": "GlobalID index",
-                    "fields": "globalid",
-                    "isAscending": false,
-                    "isUnique": true,
-                    "name": "GlobalIDIndex"
-                },
-                {
-                    "description": "Child Key Field index",
-                    "fields": "parentglobalid",
-                    "isAscending": false,
-                    "isUnique": false,
-                    "name": "ParentGlobalIDIndex"
-                }
-            ],
-            "isDataVersioned": false,
-            "maxRecordCount": 1000,
-            "name": "photos",
             "objectIdField": "objectid",
             "ownershipBasedAccessControlForFeatures": null,
             "relationships": [

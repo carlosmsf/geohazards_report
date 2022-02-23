@@ -1,7 +1,7 @@
 {
     "_ssl": false,
     "allowGeometryUpdates": true,
-    "capabilities": "Query,Editing,Create,Update,Delete",
+    "capabilities": "Create",
     "copyrightText": "",
     "currentVersion": 10.3,
     "description": "",
@@ -15,7 +15,7 @@
     "hasStaticData": false,
     "hasVersionedData": false,
     "maxRecordCount": 1000,
-    "name": "service_8d28a1c1240e4cccb0ac73ad7ed5a702",
+    "name": "service_a21cc1b854a743ebb76f1759c1b312db",
     "serviceDescription": "AGEO - GeoHazards report",
     "spatialReference": {
         "wkid": 4326

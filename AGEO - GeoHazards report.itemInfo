@@ -1,5 +1,5 @@
 {
-    "access": "private",
+    "access": "public",
     "accessInformation": null,
     "advancedSettings": null,
     "appCategories": [
@@ -11,7 +11,7 @@
     "commentsEnabled": true,
     "created": 1645112257000,
     "culture": "pt-pt",
-    "description": "\n<p style=' margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'><span style=' font-family:'>Aplicação para reporte de ocorrências de eventos de catástofres naturais no âmbito do piloto de Lisboa do Projecto AGEO</span></p>",
+    "description": "\n<p style=' margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'>Aplicação para reporte de ocorrências de eventos de catástofres naturais no âmbito do piloto de Lisboa do Projecto AGEO</p>",
     "documentation": null,
     "extent": [
     ],
@@ -27,31 +27,34 @@
     "largeThumbnail": null,
     "licenseInfo": null,
     "listed": false,
-    "modified": 1645185388000,
+    "modified": 1664297437000,
     "name": "AGEO_-_GeoHazards_report.zip",
     "numComments": 0,
     "numRatings": 0,
-    "numViews": 1,
+    "numViews": 123,
     "orgId": "1dSrzEWVQn5kHHyK",
     "owner": "resist_CML",
     "ownerFolder": "4a6c7820d16a407f8e81d7155091622b",
-    "properties": null,
+    "properties": {
+        "connectVersion": "3.14.261"
+    },
     "protected": false,
     "proxyFilter": null,
     "scoreCompleteness": 45,
     "screenshots": [
     ],
-    "size": 331222,
+    "size": 1542976,
     "snippet": "",
     "spatialReference": null,
     "subInfo": 0,
     "tags": [
     ],
-    "thumbnail": "thumbnail/logoAGEO.png",
+    "thumbnail": "thumbnail/logoAGEO-negative.png",
     "title": "AGEO - GeoHazards report",
     "type": "Form",
     "typeKeywords": [
         "Form",
+        "requireUpdate",
         "Survey123",
         "Survey123 Connect",
         "xForm"
