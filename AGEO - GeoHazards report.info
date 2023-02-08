@@ -34,6 +34,22 @@
     },
     "notificationsInfo": {
         "webhooks": [
+            {
+                "active": true,
+                "created": 1667576041288,
+                "events": [
+                    "addData"
+                ],
+                "id": "RD9XKrbGy",
+                "includePortalInfo": true,
+                "includeServiceRequest": true,
+                "includeServiceResponse": true,
+                "includeSurveyInfo": true,
+                "includeUserInfo": true,
+                "modified": 1667576041288,
+                "name": "MicrosoftPowerAutomate-bd802572a67e4b169abfb44757c9570c",
+                "url": "https://prod-39.westeurope.logic.azure.com/workflows/bd802572a67e4b169abfb44757c9570c/triggers/When_a_survey_response_is_submitted/versions/08585340308454454619/run?api-version=2016-06-01&sp=%2Ftriggers%2FWhen_a_survey_response_is_submitted%2Fversions%2F08585340308454454619%2Frun%2C%2Ftriggers%2FWhen_a_survey_response_is_submitted%2Fversions%2F08585340308454454619%2Fread&sv=1.0&sig=QVAXHBF76YyrbQjJZDo5_nCI1irO87Wa0WfNdwJDUR4"
+            }
         ]
     },
     "overviewInfo": {
